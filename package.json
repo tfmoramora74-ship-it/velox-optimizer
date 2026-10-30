@@ -1,0 +1,60 @@
+{
+  "name": "velox-optimizer",
+  "version": "1.5.0",
+  "description": "Otimizador de Windows para jogos: offline, sem conta, sem anúncios e reversível",
+  "keywords": [
+    "windows",
+    "optimizer",
+    "gaming",
+    "fps",
+    "latency",
+    "tweaks",
+    "electron"
+  ],
+  "homepage": "https://github.com/tfmoramora74-ship-it/velox-optimizer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tfmoramora74-ship-it/velox-optimizer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tfmoramora74-ship-it/velox-optimizer/issues"
+  },
+  "license": "MIT",
+  "author": "TF",
+  "main": "src/main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis portable"
+  },
+  "devDependencies": {
+    "electron": "33.2.1",
+    "electron-builder": "25.1.8"
+  },
+  "build": {
+    "appId": "local.velox.optimizer",
+    "productName": "Velox Optimizer",
+    "files": [
+      "src/**/*",
+      "package.json"
+    ],
+    "electronLanguages": [
+      "pt-BR",
+      "en-US"
+    ],
+    "compression": "maximum",
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "requestedExecutionLevel": "requireAdministrator"
+    },
+    "portable": {
+      "artifactName": "Velox Optimizer ${version} (portatil).exe"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}

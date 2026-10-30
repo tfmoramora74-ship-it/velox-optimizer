@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;" />
+  <title>Velox Optimizer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link id="modern-css" rel="stylesheet" href="modern.css" />
+</head>
+<body>
+  <div id="titlebar">
+    <div class="tb-brand"><span class="logo-dot"></span>Velox Optimizer</div>
+    <div class="tb-drag"></div>
+    <div class="tb-actions">
+      <button id="tb-min" title="Minimizar"><svg viewBox="0 0 12 12"><path d="M2 6h8"/></svg></button>
+      <button id="tb-max" title="Maximizar"><svg viewBox="0 0 12 12"><rect x="2.5" y="2.5" width="7" height="7"/></svg></button>
+      <button id="tb-close" class="close" title="Fechar"><svg viewBox="0 0 12 12"><path d="M3 3l6 6M9 3l-6 6"/></svg></button>
+    </div>
+  </div>
+  <div id="shell">
+    <aside id="sidebar"></aside>
+    <main id="content"></main>
+  </div>
+  <div id="progress" class="hidden"><div class="spinner"></div><span id="progress-label"></span><div class="bar"><i></i></div></div>
+  <div id="toasts"></div>
+  <div id="modal-root"></div>
+  <script src="ui.js"></script>
+  <script src="pages/dashboard.js"></script>
+  <script src="pages/boost.js"></script>
+  <script src="pages/apps.js"></script>
+  <script src="pages/tweaks.js"></script>
+  <script src="pages/gamemode.js"></script>
+  <script src="pages/network.js"></script>
+  <script src="pages/latency.js"></script>
+  <script src="pages/windows.js"></script>
+  <script src="pages/services.js"></script>
+  <script src="pages/power.js"></script>
+  <script src="pages/nvidia.js"></script>
+  <script src="pages/benchmark.js"></script>
+  <script src="pages/profiles.js"></script>
+  <script src="pages/tests.js"></script>
+  <script src="pages/install.js"></script>
+  <script src="pages/uninstaller.js"></script>
+  <script src="pages/bios.js"></script>
+  <script src="pages/tools.js"></script>
+  <script src="pages/settings.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
